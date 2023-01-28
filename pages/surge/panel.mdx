@@ -1,0 +1,47 @@
+import { Tab, Tabs } from "nextra-theme-docs";
+
+# Panel 面板
+
+## SF Symbols 查询
+
+[App Store](https://apps.apple.com/us/app/sf-symbols-browser/id1491161336)
+
+## 流媒体解锁检测
+
+### 单独检测
+
+<Tabs items={["DAZN", "Disney+", "Netflix", "YouTube"]}>
+  <Tab>[模块地址](https://raw.githubusercontent.com/Onlookers-Group/Texonin-LAB-Public/main/Surge/sgmodule/sgmodule_normal/DAZN.sgmodule)</Tab>
+  <Tab>[模块地址](https://raw.githubusercontent.com/Onlookers-Group/Texonin-LAB-Public/main/Surge/sgmodule/sgmodule_normal/Disney.sgmodule)</Tab>
+  <Tab>[模块地址](https://raw.githubusercontent.com/Onlookers-Group/Texonin-LAB-Public/main/Surge/sgmodule/sgmodule_normal/Netflix.sgmodule)</Tab>
+  <Tab>[模块地址](https://raw.githubusercontent.com/Onlookers-Group/Texonin-LAB-Public/main/Surge/sgmodule/sgmodule_normal/Youtube.sgmodule)</Tab>
+</Tabs>
+
+### 合并检测
+
+<Tabs items={["YouTube / Netflix / Disney+", "YouTube / Netflix / Disney+ / DAZN"]}>
+  <Tab>[模块地址](https://raw.githubusercontent.com/Onlookers-Group/Texonin-LAB-Public/main/Surge/sgmodule/sgmodule_normal/zStreaming3t1.sgmodule)</Tab>
+  <Tab>[模块地址](https://raw.githubusercontent.com/Onlookers-Group/Texonin-LAB-Public/main/Surge/sgmodule/sgmodule_normal/zStreaming4t1.sgmodule)</Tab>
+</Tabs>
+
+## 功能性面板
+
+<Tabs items={["配置重载", "网络连通性检查", "网络综合信息", "流媒体检测"]}>
+  <Tab>[模块地址](https://raw.githubusercontent.com/Onlookers-Group/Texonin-LAB-Public/main/Surge/sgmodule/sgmodule_normal/aReloadSurge.sgmodule)</Tab>
+  <Tab>[模块地址](https://raw.githubusercontent.com/Onlookers-Group/Texonin-LAB-Public/main/Surge/sgmodule/Connectivity_Test)</Tab>
+  <Tab>[模块地址](https://raw.githubusercontent.com/Onlookers-Group/Texonin-LAB-Public/main/Surge/sgmodule/NET_INFO)</Tab>
+  <Tab>[模块地址](https://raw.githubusercontent.com/Onlookers-Group/Texonin-LAB-Public/main/Surge/sgmodule/sgmodule_normal/StreamingChecking.sgmodule)</Tab>
+</Tabs>
+
+## 订阅信息
+
+```ini
+#!name=Texon's LAB
+#!desc=Informations for Texon's LAB
+[Panel]
+# Subscription Name
+Sub_info = script-name=Sub_info,update-interval=43200
+[Script]
+# Subscription Name
+Sub_info = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/Onlookers-Group/Texonin-LAB-Public/main/Surge/js/js-Airport/enAirport.js,script-update-interval=0,argument=reset_day=**&url={encode后的订阅链接}
+```

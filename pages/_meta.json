@@ -1,0 +1,34 @@
+{
+  "index": {
+    "title": "简介",
+    "theme": {
+      "layout": "full"
+    }
+  },
+  "---": {
+    "type": "separator"
+  },
+  "utilities": "实用工具",
+  "geoip-database": "GeoIP 数据库",
+  "sub-store": "Sub-Store",
+  "surge": "Surge",
+  "quantumult-x": "Quantumult X",
+  "clash": "Clash",
+  "more": {
+    "title": "More",
+    "type": "menu",
+    "items": {
+      "about": {
+        "title": "About",
+        "type": "page",
+        "display": "hidden"
+      },
+      "contact": {
+        "title": "Contact",
+        "type": "page",
+        "href": "https://texon.io",
+        "newWindow": true
+      }
+    }
+  }
+}
